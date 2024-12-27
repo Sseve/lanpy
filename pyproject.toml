@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [project.scripts]
-builddemo = "lanpy.__main__:main"
+lanpy = "lanpy.__main__:main"

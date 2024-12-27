@@ -1,12 +1,17 @@
 """
 entry point
 """
-import  sys
+from lanpy.impl import Person
+from lanpy.impl import Animal
+from lanpy.service import who
 
 
 def main():
-    print("platform: ", sys.platform)
-    print("version: ", sys.version)
+    p = Person("zhangsan")
+    a = Animal("xiaomaomi")
+
+    who(p)
+    who(a)
 
 
 if __name__ == '__main__':

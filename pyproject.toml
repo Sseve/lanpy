@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lanpy"
+version = "0.0.1"
+description = "Python base"
+authors = [
+    { name="Sseve", email="github@Sseve.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+# 项目三方依赖包依赖包
+dependencies = [
+
+]
+
+[project.scripts]
+builddemo = "lanpy.__main__:main"

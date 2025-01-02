@@ -7,8 +7,8 @@ from lanpy.service import who
 
 
 def main():
-    p = Person("zhangsan")
-    a = Animal("xiaomaomi")
+    p = Person("zhang san")
+    a = Animal("xiao mao mi")
 
     who(p)
     who(a)

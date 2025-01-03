@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 ## 项目运行管理
+## 根据实际情况调整此脚本
 
 # 设置 PYTHONPATH
 export PYTHONPATH=

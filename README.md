@@ -13,7 +13,9 @@
 - 使用setup.py脚本打包:
   1. 依赖: python -m pip install --upgrade setuptools wheel
   2. 构建: python setup.py sdist
-
+- 以上两种打包方式任选其一即可
+  1. 第一种打包方式需要包含: pyproject.toml配置文件和README.md
+  2. 第二种打包方式需要包含: setup.py, requirements.txt, README.md 和 MANIFEST.in
 * **部署**
 - 二进制部署
   1. 拷贝dist目录下的打包文件到目标机器上

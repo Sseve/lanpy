@@ -21,3 +21,7 @@ dependencies = [
 
 [project.scripts]
 lanpy = "lanpy.__main__:main"
+
+[tool.setuptools]
+# 是否包含MANIFEST.in中的资源文件
+include-package-data = true

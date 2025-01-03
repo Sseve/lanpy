@@ -1,5 +1,5 @@
 """
-项目大巴脚本
+项目打包脚本
 """
 import pathlib
 from setuptools import setup, find_packages

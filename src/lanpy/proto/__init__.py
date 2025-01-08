@@ -4,8 +4,9 @@
 """
 from typing import Protocol
 
-class Action(Protocol):
-    """这是一个协议接口示例"""
+
+class Species(Protocol):
+
     def sing(self):
         ...
 

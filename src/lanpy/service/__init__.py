@@ -4,6 +4,7 @@
 import functools
 from typing import Callable
 
+from lanpy.iface import ICar
 from lanpy.proto import Species
 
 
@@ -29,3 +30,7 @@ def decorator(func: Callable) -> Callable:
 def who(species: Species):
     species.sing()
     species.running()
+
+
+def drive(car: ICar):
+    car.drive()

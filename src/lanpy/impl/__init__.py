@@ -4,7 +4,7 @@
 import functools
 from typing import Callable
 
-from lanpy.proto import Species
+from lanpy.iface import ICar
 
 
 def decorator_class(cls):
@@ -41,7 +41,7 @@ def decorator_method(item: str) -> Callable:
 
 
 @decorator_class
-class Person(Species):
+class Person:
     """
     这是一个Person实现示例, 实现Species协议
     """
@@ -58,7 +58,7 @@ class Person(Species):
 
 
 @decorator_class
-class Animal(Species):
+class Animal:
     """
     这是一个Animal实现示例, 实现Species协议
     """
@@ -71,4 +71,26 @@ class Animal(Species):
 
     @decorator_method("animal")
     def running(self):
+        print(self.name, "is running ...")
+
+
+class Benz(ICar):
+    """
+    这是一个Benz实现示例,实现ICar接口,必须强制实现
+    """
+    def __init__(self, name):
+        self.name = name
+
+    def drive(self):
+        print(self.name, "is running ...")
+
+
+class Bmw(ICar):
+    """
+    这是一个Bmw实现示例,实现ICar接口,必须强制实现
+    """
+    def __init__(self, name):
+        self.name = name
+
+    def drive(self):
         print(self.name, "is running ...")
